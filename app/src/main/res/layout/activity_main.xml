@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonCrear"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#2983D2"
+        android:text="Crear gatito"
+        app:layout_constraintEnd_toEndOf="@+id/editTextRaza"
+        app:layout_constraintStart_toStartOf="@+id/editTextRaza"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRaza" />
+
+    <Button
+        android:id="@+id/buttonActualizar"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="#2983D2"
+        android:text="Actualizar gatito"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBorrar"
+        app:layout_constraintStart_toStartOf="@+id/buttonBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRaza" />
+
+    <Button
+        android:id="@+id/buttonBorrar"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#2983D2"
+        android:text="Borrar gatito"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCrear"
+        app:layout_constraintStart_toStartOf="@+id/buttonCrear"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRaza" />
+
+    <Button
+        android:id="@+id/buttonVerGatos"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#2983D2"
+        android:text="Ver lista de gatos"
+        app:layout_constraintEnd_toEndOf="@+id/buttonActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRaza" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="293dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        android:text="Añadir un nuevo gatito"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="340dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Fecha de nacimiento"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextRaza"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="216dp"
+        android:ems="10"
+        android:hint="Raza"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
